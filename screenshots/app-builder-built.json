@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Laboratorium BIOMED",
+      "hasCanvas": false,
+      "bodyTextLen": 1601,
+      "bodyTextHash": "145510b7ded6869412257aeb0d825a729d3f43cdcce3a11644065d870046e856",
+      "bodyTextPrefix": "BIOMED LABORATORIUM Beranda Layanan Harga Cabang WhatsApp BANTEN",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Laboratorium BIOMED",
+      "hasCanvas": false,
+      "bodyTextLen": 1549,
+      "bodyTextHash": "6c646b4c9e0fc466318622c8cf9806cfd535d1af59d42d714c64fd88321e47db",
+      "bodyTextPrefix": "BIOMED LABORATORIUM BANTEN · SEJAK 1991 Surat hasil yang rapi. T",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #f1f3f5;
+  --color-ink: #1a2832;
+  --color-muted: #5d6d78;
+  --color-blue: #3d5a73;
+  --color-blue-deep: #243848;
+  --color-red: #c81e24;
+  --color-line: #d4dce3;
+  --color-surface: #ffffff;
+  --color-gold: #e4b53c;
+  --color-chalk: #f6f3ec;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+}
+
+html[data-theme="malam"] {
+  color-scheme: dark;
+  --color-paper: #4e6270;
+  --color-surface: #5d7382;
+  --color-ink: #f3efe6;
+  --color-muted: #d5cfc4;
+  --color-blue: #c5d2dc;
+  --color-blue-deep: #3f5260;
+  --color-red: #d56b6e;
+  --color-line: #7d8f9c;
+  --color-gold: #e8c56a;
+  --color-chalk: #f6f3ec;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    transition:
+      background-color 200ms ease,
+      color 200ms ease;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    color: var(--color-ink);
+  }
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes biomed-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(4deg);
+  }
+}
+
+@keyframes biomed-scope {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes biomed-lens {
+  0%,
+  70%,
+  100% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.35;
+  }
+}
+
+@layer utilities {
+  .animate-bob {
+    animation: biomed-bob 2.4s ease-in-out infinite;
+  }
+  .animate-scope {
+    animation: biomed-scope 3s ease-in-out infinite;
+  }
+  .animate-lens {
+    animation: biomed-lens 2.8s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bob,
+  .animate-scope,
+  .animate-lens,
+  .animate-ping {
+    animation: none;
+  }
+}
+
+@layer components {
+  .story-card {
+    flex: 0 0 100%;
+  }
+  @media (min-width: 640px) {
+    .story-card {
+      flex-basis: calc((100% - 1rem) / 2);
+    }
+  }
+  @media (min-width: 1024px) {
+    .story-card {
+      flex-basis: calc((100% - 3rem) / 4);
+    }
+  }
+  @media (min-width: 1280px) {
+    .story-card {
+      flex-basis: calc((100% - 4rem) / 5);
+    }
+  }
+}

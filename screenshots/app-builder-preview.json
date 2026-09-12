@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Laboratorium BIOMED",
+      "hasCanvas": false,
+      "bodyTextLen": 2453,
+      "bodyTextHash": "b2b7d1e206607d175f3dc29d2a3248f7614c34f2499d3236d2370e58315c50ee",
+      "bodyTextPrefix": "Beranda Layanan Checkup Harga Cabang Menu Reservasi BANTEN · SEJ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Laboratorium BIOMED",
+      "hasCanvas": false,
+      "bodyTextLen": 2387,
+      "bodyTextHash": "3c26e956e1cf5b28abb45b852c141b57139785337915e5624313a5403d05d980",
+      "bodyTextPrefix": "BANTEN · SEJAK 1991 Surat hasil yang rapi. Tubuh yang dijaga. La",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
